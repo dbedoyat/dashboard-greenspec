@@ -1,0 +1,122 @@
+.navBar {
+  width: 100%;
+  bottom: 0;
+  list-style: none;
+  padding-top: 10px;
+  justify-content: space-around;
+  flex-direction: row;
+  height: 80px;
+  background-color: var(--color-white);
+  border-top: 1px solid #f4f5f6;
+  display: inline-block;
+  @media screen and (width >= 993px) {
+    padding-top: 100px;
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    background-color: var(--color-white);
+    box-shadow: var(--shadow);
+    padding-left: 20px;
+    padding-right: 20px;
+    display: inline-block;
+  }
+
+  .list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    @media screen and (width >= 993px) {
+      display: inline-block;
+      width: 100%;
+    }
+    .items {
+      flex-basis: 50px;
+      margin: 0;
+      text-align: center;
+      @media screen and (width >= 993px) {
+        text-align: left;
+
+        vertical-align: middle;
+        margin-bottom: 10px;
+      }
+
+      .item {
+        border-radius: 10px;
+        padding: 5px 10px;
+        display: inline-block;
+        width: 100%;
+        @media screen and (width >= 993px) {
+          padding: 10px 15px;
+        }
+        .icon {
+          display: inline-block;
+          min-width: var(--icon-size);
+          min-height: var(--icon-size);
+          @media screen and (width >= 993px) {
+            margin-right: 10px;
+            vertical-align: bottom;
+            padding: 0;
+          }
+        }
+
+        .title {
+          transform-origin: left;
+          font-size: 0.8rem;
+          @media screen and (width >= 993px) {
+            font-size: 1rem;
+            transition: var(--add-transition);
+          }
+        }
+      }
+    }
+  }
+  &.collapsed {
+    @media screen and (width >= 993px) {
+      max-width: var(--navbar-collapsed);
+      padding-left: 15px;
+      padding-right: 15px;
+      transition: var(--add-transition);
+      .list {
+        padding: 0;
+        .items {
+          .item {
+            max-width: 1.5rem;
+            padding: 3px;
+            .icon {
+              margin-right: 0;
+            }
+            .title {
+              transform-origin: left;
+              transform: scaleX(0) !important;
+              color: blueviolet;
+              transition: var(--add-transition);
+              overflow: hidden;
+            }
+          }
+        }
+      }
+    }
+  }
+  &.expanded {
+    max-width: 100%;
+    @media screen and (width >= 993px) {
+      max-width: var(--navbar-expanded);
+      transition: var(--add-transition);
+      .list {
+        .items {
+          .item {
+            .title {
+              transform-origin: left;
+              transform: scaleX(1);
+              transition: var(--add-transition);
+            }
+          }
+        }
+      }
+    }
+  }
+}

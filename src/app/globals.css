@@ -1,13 +1,32 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  --color-white: #fff;
+  --color-light: #f8f1ff;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-green: #3ab073;
+  --color-light-green: #dbffeb;
+  --color-yellow: #ffbe07;
+  --color-light-yellow: #ffe6bf;
+  --color-blue: #0c6dfd;
+  --color-light-blue: #dae7f0;
+  --color-royal: #3f52ef;
+  --color-light-royal: #deebff;
+
+  --color-red: #9b1118;
+  --color-light-red: #fae6e7;
+  --color-dark-blue: #2a4b87;
+  --color-dark: #1a1a60;
+
+  --shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+  --header-height: 80px;
+  --navbar-expanded: 240px;
+  --navbar-collapsed: 60px;
+
+  --icon-size: 1.5rem;
+  --icon-large-size: 2rem;
+  --add-transition: all ease 250ms;
+
+  --mobile-size: 993px;
 }
 
 html,
@@ -17,11 +36,22 @@ body {
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--color-dark);
+  background: var(--color-light);
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  header {
+    width: 100%;
+    height: var(--header-height);
+    position: fixed;
+    z-index: 1000;
+  }
+
+  nav {
+    position: fixed;
+    z-index: 998;
+  }
 }
 
 * {
@@ -33,10 +63,31 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+
+  &:active {
+    background-color: none;
+    color: inherit;
+  }
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+.itemActive {
+  @media screen and (width >= 993px) {
+    background-color: var(--color-light-royal);
+  }
+  > span {
+    font-weight: bold;
+    color: var(--color-royal);
+  }
+  > div {
+    background-color: var(--color-light-royal);
+    padding: 0px 10px;
+    border-radius: 8px;
+    svg {
+      position: relative;
+      color: var(--color-royal);
+      @media screen and (width >= 993px) {
+        background-color: transparent;
+      }
+    }
   }
 }

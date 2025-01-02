@@ -1,0 +1,16 @@
+.header {
+  background-color: var(--color-white);
+  top: 0;
+  left: 0;
+  box-shadow: var(--shadow);
+  display: inline-flex;
+  align-items: center;
+  padding: 0 20px;
+
+  .title {
+    padding-left: 0;
+    @media screen and (width >= 993px) {
+      padding-left: 25px;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.hamburger {
+  display: none;
+  @media screen and (width >= 993px) {
+    display: block;
+    background-color: transparent;
+    border: 0;
+    position: relative;
+    cursor: pointer;
+
+    .icon {
+      width: var(--icon-size);
+      height: var(--icon-size);
+    }
+  }
+}
