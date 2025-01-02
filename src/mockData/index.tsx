@@ -76,3 +76,8 @@ export const chartData = {
     },
   ],
 };
+
+export const pageData = {
+  title: 'Kanut',
+  description: 'Lorem ipsum dolor',
+};

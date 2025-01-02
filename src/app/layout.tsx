@@ -4,7 +4,7 @@ import {Open_Sans} from 'next/font/google';
 import NavBar from '@/components/NavBar';
 import MainLayout from '@/components/MainLayout';
 import {DashboardProvider} from '@/context/DashboardContext';
-import {navBarData} from '@/mockData';
+import {navBarData, pageData} from '@/mockData';
 import './globals.css';
 
 const openSans = Open_Sans({
@@ -26,7 +26,7 @@ export default function RootLayout({
     <html lang='en'>
       <body className={`${openSans.variable}`}>
         <DashboardProvider>
-          <Header title={metadata.title} />
+          <Header pageData={pageData} />
           <NavBar navBarData={navBarData} />
           <MainLayout>{children}</MainLayout>
         </DashboardProvider>
