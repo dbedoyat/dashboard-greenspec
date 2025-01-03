@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dashboard Green Spec
 
-## Getting Started
+Overview
+Dashboard Green Spec is a dashboard project built with Next.js, React, and TypeScript.
+Version
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Version: 0.1.0
+Scripts
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Development
+pnpm dev / npm run dev / yarn dev: Starts the development server with Next.js.
+Building and Deployment
+pnpm build / npm run build / yarn build: Builds the application for production with Next.js.
+pnpm start / npm run start / yarn start: Starts the production server with Next.js.
+Linting
+pnpm lint / npm run lint / yarn lint: Runs the Next.js linter to check code quality.
+Getting Started
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+Clone the repository: git clone and the url of the repo
+Install dependencies: pnpm install / npm install / yarn install
+Start the development server: pnpm dev / npm run dev / yarn dev
 
-To learn more about Next.js, take a look at the following resources:
+License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License. See LICENSE.md for details.
