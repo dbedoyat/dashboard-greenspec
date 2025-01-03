@@ -1,6 +1,8 @@
 'use client';
 import dynamic from 'next/dynamic';
 import 'chart.js/auto';
+import styles from './LineChart.module.css';
+
 const Line = dynamic(() => import('react-chartjs-2').then((mod) => mod.Line), {
   ssr: false,
 });
@@ -21,7 +23,7 @@ interface Dataset {
 const LineChart = ({chartData}: {chartData: ChartData}) => {
   return (
     <div>
-      <Line data={chartData} />
+      <Line className={styles.chart} data={chartData} />
     </div>
   );
 };

@@ -11,7 +11,9 @@ const Hamburger = () => {
 
   return (
     <button className={styles.hamburger} onClick={toggleExpanded}>
-      <InlineIcon className={styles.icon} icon={`ph:list`} />
+      <div className={styles.icon}>
+        <InlineIcon className={styles.icon} icon={`ph:list`} />
+      </div>
     </button>
   );
 };

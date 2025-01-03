@@ -1,0 +1,43 @@
+.farms {
+  list-style: none;
+  .items {
+    display: inline-block;
+    border-bottom: 1px solid #d3d3d3;
+    width: 100%;
+    padding: 10px 0;
+    position: relative;
+    .title {
+      width: calc(100% - 2rem);
+    }
+    .icon {
+      display: inline-block;
+      width: var(--icon-size);
+      height: var(--icon-size);
+      vertical-align: middle;
+      margin-right: 10px;
+      @media screen and (width >= 993px) {
+        margin-right: 10px;
+        vertical-align: bottom;
+        padding: 0;
+        width: var(--icon-size);
+        height: var(--icon-size);
+      }
+      &.status {
+        position: absolute;
+        right: -10px;
+      }
+      &.active {
+        color: var(--color-green);
+      }
+      &.acquit {
+        color: var(--color-blue);
+      }
+      &.ondelay {
+        color: var(--color-yellow);
+      }
+    }
+  }
+  .items:last-child {
+    border-bottom: 0px;
+  }
+}

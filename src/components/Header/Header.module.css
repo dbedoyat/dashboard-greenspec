@@ -6,7 +6,10 @@
   display: inline-flex;
   align-items: center;
   padding: 0 20px;
-
+  height: var(--header-mobile-height);
+  @media screen and (width >= 993px) {
+    height: var(--header-height);
+  }
   .title {
     padding-left: 0;
     @media screen and (width >= 993px) {

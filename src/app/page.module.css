@@ -9,12 +9,11 @@
   display: inline-block;
   width: 100%;
   @media screen and (width >= 993px) {
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     display: grid;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    min-height: 450px;
   }
 
   .item {
@@ -25,19 +24,53 @@
   }
   @media screen and (width >= 993px) {
     .item1 {
-      grid-area: 1 / 1 / 4 / 3;
+      grid-area: 1 / 1 / 3 / 3;
     }
     .item2 {
-      grid-area: 1 / 3 / 6 / 7;
+      grid-area: 1 / 3 / 5 / 9;
     }
     .item3 {
-      grid-area: 4 / 1 / 6 / 3;
+      grid-area: 3 / 1 / 5 / 3;
     }
     .item4 {
-      grid-area: 6 / 1 / 9 / 4;
+      grid-area: 5 / 1 / 7 / 5;
     }
     .item5 {
-      grid-area: 6 / 4 / 9 / 7;
+      grid-area: 5 / 5 / 7 / 9;
     }
+  }
+}
+
+.icon {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  margin-right: 4px;
+  display: inline-block;
+  @media screen and (width >= 993px) {
+    width: var(--icon-large-size);
+    height: var(--icon-large-size);
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+}
+
+.intensity {
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 20px;
+  vertical-align: top;
+  @media screen and (width >= 993px) {
+    max-width: calc(40% - 20px);
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+.chart {
+  width: 100%;
+  display: inline-block;
+  margin: 0;
+  @media screen and (width >= 993px) {
+    max-width: 60%;
+    margin-left: 20px;
   }
 }

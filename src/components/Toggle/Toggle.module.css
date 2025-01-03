@@ -1,0 +1,15 @@
+.toggle {
+  display: flex;
+  align-items: center;
+}
+
+.toggle input[type='checkbox'] {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.toggle label {
+  font-size: 16px;
+  color: #333;
+}

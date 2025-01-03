@@ -1,0 +1,42 @@
+.searchBar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+
+  & input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+
+    &.expanded {
+      width: 250px;
+    }
+  }
+
+  & .toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+
+    & .search-icon {
+      font-size: 16px;
+    }
+
+    & .close-icon {
+      font-size: 18px;
+    }
+  }
+}

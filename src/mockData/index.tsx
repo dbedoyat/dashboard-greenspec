@@ -81,3 +81,25 @@ export const pageData = {
   title: 'Kanut',
   description: 'Lorem ipsum dolor',
 };
+
+export const farmsData = [
+  {
+    id: 1,
+    icon: 'coffee-bean',
+    title: 'Subachoque',
+    status: 'active',
+  },
+  {
+    id: 2,
+
+    icon: 'cherries',
+    title: 'El Rosal',
+    status: 'acquit',
+  },
+  {
+    id: 3,
+    icon: 'orange',
+    title: 'Facatativá',
+    status: 'ondelay',
+  },
+];
