@@ -1,9 +1,11 @@
 import React from 'react';
 
+import Laptop from '@/components/Laptop';
 const page = () => {
   return (
     <div>
-      <p>profile</p>
+      <Laptop />
+      <h1 style={{textAlign: 'center'}}>Profile</h1>
     </div>
   );
 };

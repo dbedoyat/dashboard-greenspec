@@ -1,11 +1,13 @@
 import React from 'react';
 
-const Contact = () => {
+import Laptop from '@/components/Laptop';
+const page = () => {
   return (
     <div>
-      <p>Contact</p>
+      <Laptop />
+      <h1 style={{textAlign: 'center'}}>Contact</h1>
     </div>
   );
 };
 
-export default Contact;
+export default page;

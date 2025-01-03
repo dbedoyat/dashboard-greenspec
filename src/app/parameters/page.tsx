@@ -1,11 +1,13 @@
 import React from 'react';
 
-const Parameters = () => {
+import Laptop from '@/components/Laptop';
+const page = () => {
   return (
     <div>
-      <p>Parameters</p>
+      <Laptop />
+      <h1 style={{textAlign: 'center'}}>Parameters</h1>
     </div>
   );
 };
 
-export default Parameters;
+export default page;
